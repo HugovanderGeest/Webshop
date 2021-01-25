@@ -9,7 +9,7 @@ function ready() {
     for (var i = 0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
-    
+    }
 
     var quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for (var i = 0; i < quantityInputs.length; i++) {
@@ -115,3 +115,13 @@ $(document).ready(function() {
     var data = "q=select%20*%20from%20html%20where%20url%3D%22http%3A%2F%2Ffinance.yahoo.com%2Fq%3Fs%3D" + symbol + "%22%20and%20xpath%3D'%2F%2Fspan%5B%40id%3D%22yfs_l10_" + symbol + "%22%5D'&format=json";
     $.getJSON(url, data, callback);
 });
+
+describe("A suite is just a function", function() {
+    var a;
+  
+    it("and so is a spec", function() {
+      a = true;
+  
+      expect(a).toBe(true);
+    });
+  });
